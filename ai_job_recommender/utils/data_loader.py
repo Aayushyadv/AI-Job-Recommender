@@ -2,7 +2,19 @@
 import pandas as pd
 import streamlit as st
 
-DATA_PATH = "data/jobs.csv"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "data" / "jobs.csv"
+
+
+def load_jobs():
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(
+            f"Dataset not found: {DATA_PATH}"
+        )
+
+    df = pd.read_csv(DATA_PATH)
+
+    return df
 
 # Map common alternate column names -> canonical names used across the app
 COLUMN_ALIASES = {

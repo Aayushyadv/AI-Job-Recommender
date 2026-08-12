@@ -8,7 +8,7 @@ st.write("### Developer")
 
 st.write("**Ayush Yadav**")
 
-st.write("📧 Email: your_email@gmail.com")
+st.write("📧 Email:ayushdatasci@gmail.com")
 
 st.write("💼 LinkedIn:")
 st.write("https://linkedin.com/in/ayush-yadav-182913264")

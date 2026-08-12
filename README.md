@@ -72,5 +72,5 @@ The dashboard provides information about:
 
 Clone the repository:
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+bash
+git clone  https://github.com/Aayushyadv/AI-Job-Recommender.git
